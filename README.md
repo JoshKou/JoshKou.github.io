@@ -4,7 +4,7 @@ My portfolio webiste
   <img alt="Logo" src="https://raw.githubusercontent.com/JoshKou/JoshKou.github.io/master/apple-touch-icon.png" width="100" />
 </div>
 <h1 align="center">
-  joshkou.com - v4
+  joshkou.com
 </h1>
 <p align="center">
   The first iteration of <a href="https://joshkou.com" target="_blank">joshkou.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
