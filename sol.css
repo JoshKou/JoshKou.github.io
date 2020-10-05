@@ -1,6 +1,29 @@
 body {
     font: 15px/24px 'Open Sans', Helvetica, Arial, sans-serif;
-    color: #383838;
+    background : #242423;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+
+h1,h2,h3,h4,h5 {
+	color: #E8EDDF;
+}
+
+p, li, div {
+	color: #CFDBD5;
+}
+
+a {
+	color: #F5CF66;
 }
 
 kbd {
@@ -15,7 +38,7 @@ kbd {
 kbd {
     border: 1px solid #ccc;
     font-size: 11px;
-    background-color: #f7f7f7;
+    background-color: #242423;
     color: #333;
     -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
@@ -38,15 +61,6 @@ pre, code, kbd, samp {
     font-size: 1em;
 }
 
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
 
 .entry-content p, .entry-content ul, .entry-content ol, .entry-content dl, .entry-content blockquote, .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content code, .entry-content pre, .entry-content table {
     /* margin: 0 0 24px; */
@@ -59,5 +73,6 @@ body.site-boxed #site-container, .container {
 
 .container {
     padding: 0 30px;
+    background: #333533
 }
 
