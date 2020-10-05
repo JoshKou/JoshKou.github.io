@@ -18,9 +18,14 @@ h1,h2,h3,h4,h5 {
 	color: #E8EDDF;
 }
 
-h1 {
+#profile-title {
 	font-weight: bold;
 	font-size: 42px;
+}
+
+#article-title {
+ font-weight: bold;
+ font-size: 30px
 }
 
 p, li, div {
@@ -29,6 +34,16 @@ p, li, div {
 
 a {
 	color: #F5CF66;
+}
+
+.wp-image {
+    max-width: 100%;
+    height: auto;
+}
+
+img.prof {
+	max-width: 34%;
+	height: auto%;
 }
 
 kbd {
@@ -44,9 +59,9 @@ kbd {
     border: 1px solid #ccc;
     font-size: 11px;
     background-color: #242423;
-    color: #333;
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+    color: #3333;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff outset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff outset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -79,9 +94,4 @@ body.site-boxed #site-container, .container {
 .container {
     padding: 0 30px;
     background: #333533
-}
-
-img.prof {
-	max-width: 34%;
-	height: auto%;
 }
