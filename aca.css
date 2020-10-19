@@ -17,6 +17,11 @@ h1,h2,h3,h4,h5 {
 	color: #E8EDDF;
 }
 
+table {
+    border-color: #E8EDDF;
+    border-width: 2px;
+}
+
 #profile-title {
 	font-weight: bold;
 	font-size: 42px;
@@ -121,6 +126,12 @@ body.site-boxed #site-container, .container {
 
 .units {
     font-size: 15px;
+    color: #EEC643;
+}
+
+.totunits {
+    font-size: 15px;
+    color: #BF1A2F;
 }
 
 /**/
