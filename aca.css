@@ -1,0 +1,129 @@
+body {
+    font: 15px/24px 'Open Sans', Helvetica, Arial, sans-serif;
+    background : #242423;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1,h2,h3,h4,h5 {
+	color: #E8EDDF;
+}
+
+#profile-title {
+	font-weight: bold;
+	font-size: 42px;
+}
+
+#article-title {
+ font-weight: bold;
+ font-size: 30px
+}
+
+p, li, div {
+	color: #CFDBD5;
+}
+
+a {
+	color: #F5CF66;
+}
+
+.ontario-header {
+    width: 110px;
+    min-width: 110px;
+}
+
+.sm-header {
+    width: 220px;
+    min-width: 100px;
+}
+
+.wp-image {
+    max-width: 100%;
+    height: auto;
+}
+
+img.prof {
+	max-width: 34%;
+	height: auto%;
+}
+
+kbd {
+    align-items: center;
+    display: inline-flex;
+    max-height: 98%;
+    min-height: 1.1rem;
+    min-width: 1.2em;
+    vertical-align: text-bottom;
+}
+
+kbd {
+    border: 1px solid #ccc;
+    font-size: 11px;
+    background-color: #242423;
+    color: #3333;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff outset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff outset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.4;
+    white-space: nowrap;
+    vertical-align: text-bottom;
+    margin: 0 .1em;
+    padding: .1em .6em;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+
+.entry-content p, .entry-content ul, .entry-content ol, .entry-content dl, .entry-content blockquote, .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content code, .entry-content pre, .entry-content table {
+    /* margin: 0 0 24px; */
+} 	
+
+body.site-boxed #site-container, .container {
+    margin: 0 auto;
+    max-width: 1040px;
+}
+
+.container {
+    padding-top: 60px;
+    padding: 30px 30px;
+    background: #333533
+}
+.butype {
+    font-size: 15px;
+    text-shadow: 0 1px 0 #fff;
+} 
+
+.notsat {
+        color: #F78E69;
+
+}
+
+.sat {
+    color: #ABE188;
+}
+
+.units {
+    font-size: 15px;
+}
+
+/**/
+/**/
+/**/
+/**/
