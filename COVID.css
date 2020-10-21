@@ -1,6 +1,7 @@
 body {
-    font: 15px/24px 'Open Sans', Helvetica, Arial, sans-serif;
-    background : #242423;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    background : #f0f0f2;
 }
 
 h3 {
@@ -14,7 +15,7 @@ h3 {
 }
 
 h1,h2,h3,h4,h5 {
-	color: #E8EDDF;
+	color: #000;
 }
 
 #profile-title {
@@ -28,16 +29,27 @@ h1,h2,h3,h4,h5 {
 }
 
 p, li, div {
-	color: #CFDBD5;
+	color: #000;
 }
 
-a {
-	color: #F5CF66;
+a:link, a:visited {
+    color: #38488f;
+    text-decoration: underline, bold;
+
+}
+
+#special {
+    color: #fff;
 }
 
 .ontario-header {
     width: 110px;
     min-width: 110px;
+}
+
+.public-header {
+    width: 10em;
+    min-width: 10em;
 }
 
 .sm-header {
@@ -95,12 +107,52 @@ pre, code, kbd, samp {
     /* margin: 0 0 24px; */
 } 	
 
-body.site-boxed #site-container, .container {
+body.site-boxed, .container {
     margin: 0 auto;
     max-width: 1040px;
 }
 
 .container {
-    padding: 0 30px;
-    background: #333533
+    padding: 2em;
+    background: #fdfdff;
+    width: 50em;
+    border-radius: 0.5em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.05);
+    margin: 1em auto;
+    margin-bottom: 2em;
+
 }
+
+.frame  {
+    background: #fff;
+    width: 600px;
+    padding: 10px;
+}
+
+.frame h3 {
+    color: #002A50;
+    font-size: 110%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+#ontario {
+    padding: 1em;
+    background: #000;
+    border-radius: 0.5em;
+    max-width: 7em;
+    margin: 1em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.05);
+}
+
+#public {
+    padding: 1em;
+    background: #f0f0f2;
+    border-radius: 0.5em;
+    max-width: 10em;
+    margin: 1em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+}
+
