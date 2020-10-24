@@ -9,15 +9,79 @@
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<link rel="stylesheet" type="text/css" href="COVID.css">
+	<link rel="stylesheet" type="text/css" href="ontario-theme.css">
 </head>
-<body>
-<div class="container">
+<body class="my">
+	<!-- start banner -->
+	<div class="covid-main__block-one ontario-background--gold">
+    <div class="ontario-background--gold ontario-row">
+      <div class="layout-content ontario-column ontario-small-12">
+        <div class="ontario-row">
+    			<div class="ontario-small-12 ontario-columns">
+      			<div id="block-frontpageblock1">
+  						<div><!-- block 1 -->
+								<div class="ontario-grid-container ontario-margin-top-32-!">
+									<div class="ontario-row ontario-section__covid-intro-container">
+										<div class="ontario-column ontario-medium-8 ontario-small-12 ontario-padding-bottom-16-!">
+											<p class="ontario-h4">Download the <span aria-hidden=" true=">COVID<span class="ontario-show-for-sr">covid</span> Alert mobile app to protect yourself and your community</span></p>
+
+											<p>Get a phone alert if you have been exposed to <span aria-hidden="true" class="ontario-nbsp">COVID-19</span><span class="ontario-show-for-sr">covid 19</span> (coronavirus), and let others know if you test positive without sharing any personal information.</p>
+											<a class="ontario-button ontario-button--black-bg" href="https://covid-19.ontario.ca/covidalert">Learn how it works</a>
+										</div>
+
+										<div class="ontario-column ontario-medium-3 ontario-hide-for-small-only"><img alt="" src="https://covid-19.ontario.ca/themes/custom/ds_theme/c19-assets/images/covidappbanner_240x182px.svg"></div>
+										</div>
+									<!-- end block 1 -->
+								</div>
+							</div>
+      			</div>
+					</div>
+  			</div>
+			</div>
+    </div>
+	</div>
+
+		<!--  -->
+    <!--  -->
+    <!-- end banner -->
+	<div class="container">
 	<header>
 		<h1>COVID-19</h1>
 	</header>
 		<h3>COVID-19 Monitoring - Public Data Sources for <i>New Tecumseth, Ontario</i></h3>
 		<h5>Josh Kou
-		<div>Published October 16, 2020</div></h5>
+		</h5>
+		<script type="text/javascript">
+			var myDate = new Date(); 
+        var myDay = myDate.getDay(); 
+        
+        // Array of days. 
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 
+            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+        ]; 
+        var curday = function(sp){
+				today = new Date();
+				var dd = today.getDate();
+				var mm = today.getMonth()+1; //As January is 0.
+				var yyyy = today.getFullYear();
+
+				if(dd<10) dd='0'+dd;
+				if(mm<10) mm='0'+mm;
+				return (mm+sp+dd+sp+yyyy);
+				};
+
+        document.write("Updated " + weekday[myDay] + " " + curday('/') ); 
+        
+        // get hour value. 
+        // var hours = myDate.getHours(); 
+        // var ampm = hours >= 12 ? 'PM' : 'AM'; 
+        // hours = hours % 12; 
+        // hours = hours ? hours : 12; 
+        // var minutes = myDate.getMinutes(); 
+        // minutes = minutes < 10 ? '0' + minutes : minutes; 
+        // var myTime = hours + " " + ampm + " : " + minutes +  
+        //     " : " + myDate.getMilliseconds(); 
+		</script>
 		<h3>Intra-Provincial Level Data</h3>
 			<p></p>
 			<table>
@@ -36,6 +100,7 @@
 								
 							<a href="https://www.publichealthontario.ca/en/data-and-analysis/infectious-disease/covid-19-data-surveillance/covid-19-data-tool">
 								<img class="public-header" src="https://www.publichealthontario.ca/-/media/images/site-template/pho-logo.png?la=en">
+								<br>
 								Ontario COVID-19 Data Map
 							</a>
 							</div>
@@ -75,7 +140,7 @@
 			<img src="https://www.simcoemuskokahealthstats.org/Common/Images/Base/hsLOGO.png">
 			<img class="ontario-header" src="https://www.simcoemuskokahealthstats.org/Common/Images/Base/SMDHULogo.gif">
 			<h3>COVID-19 Case Summary Table</h3>
-			<iframe aria-label="chart" id="datawrapper-chart-oEk6V" src="https://datawrapper.dwcdn.net/oEk6V/2/" scrolling="no" style="width: 0px; border: medium none; min-width: 100% !important;" width="540" height="370" frameborder="0"></iframe>
+			<iframe aria-label="chart" id="datawrapper-chart-oEk6V" src="https://datawrapper.dwcdn.net/oEk6V/2/" scrolling="no" style=" width: 0px; border: medium none; min-width: 100% !important;" width="540" height="370" frameborder="0"></iframe>
 			<br>
 			<h3>COVID-19 Cases by Municipality and Current Status</h3>
 			<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-ZjXLr" src="https://datawrapper.dwcdn.net/ZjXLr/5/" scrolling="no" style="border: none;" width="600" height="700" frameborder="0"></iframe>
