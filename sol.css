@@ -11,7 +11,6 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-
 }
 
 h1,h2,h3,h4,h5 {
@@ -32,8 +31,28 @@ p, li, div {
 	color: #CFDBD5;
 }
 
+#covidd {
+    align: center;
+    text-align: right;
+}
+
 a {
 	color: #F5CF66;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F5CF66;
+    font-weight: bold;
+}
+
+#covida {
+    color: #F28F3B;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 .wp-image {
