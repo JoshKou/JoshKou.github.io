@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payroll</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://covid-19.ontario.ca/themes/custom/ds_theme/favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://covid-19.ontario.ca/themes/custom/ds_theme/favicon.ico">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="stylesheet" type="text/css" href="Pay.css">
+	<link rel="stylesheet" type="text/css" href="ontario-theme.css">
+</head>
+<body class="my">
+	<!-- start banner -->
+    <!-- end banner -->
+	<div class="container">
+	<header>
+		<h1>Payroll</h1>
+	</header>
+		<script type="text/javascript">
+			var myDate = new Date(); 
+        var myDay = myDate.getDay(); 
+        
+        // Array of days. 
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 
+            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+        ]; 
+        var curday = function(sp){
+				today = new Date();
+				var dd = today.getDate();
+				var mm = today.getMonth()+1; //As January is 0.
+				var yyyy = today.getFullYear();
+
+				if(dd<10) dd='0'+dd;
+				if(mm<10) mm='0'+mm;
+				return (mm+sp+dd+sp+yyyy);
+				};
+
+        document.write("Updated " + weekday[myDay] + " " + curday('/') ); 
+        
+        // get hour value. 
+        // var hours = myDate.getHours(); 
+        // var ampm = hours >= 12 ? 'PM' : 'AM'; 
+        // hours = hours % 12; 
+        // hours = hours ? hours : 12; 
+        // var minutes = myDate.getMinutes(); 
+        // minutes = minutes < 10 ? '0' + minutes : minutes; 
+        // var myTime = hours + " " + ampm + " : " + minutes +  
+        //     " : " + myDate.getMilliseconds(); 
+		</script>
+		<h3>Employee J</h3>
+			<p></p>	
+		<ul>
+			<li>
+				<strong>Historical Payroll</strong>
+				<div></div>
+				<iframe title="Earnings" aria-label="Range Plot" id="datawrapper-chart-qsdIa" src="https://datawrapper.dwcdn.net/qsdIa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 510px !important; border: none; background-color: white;" height="210"></iframe>
+					<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+					</script>
+				<p></p>
+				<ol>
+					<li>
+						<a href="083020-091220"><div class="ReportTitle">Report	083020-091220</div></a>
+					</li>
+					<li>
+						<a href="091320-092620"><div class="ReportTitle">Report	091320-092620</div></a>
+					</li>
+					<li>
+						<a href="092720-101020"><div class="ReportTitle">Report	092720-101020</div></a>
+					</li>
+					<li>
+						<a href="101120-102420"><div class="ReportTitle">Report	101120-102420</div></a>
+					</li>
+					<li>
+						<a href="102520‐110720"><div class="ReportTitle">Report	102520‐110720</div></a>
+					</li>
+					<li>
+						<a href="110820-112120"><div class="ReportTitle">Report	110820‐112120</div></a>
+					</li>
+					<li>
+						<a href="112220-120520"><div class="ReportTitle">Report	112220-120520</div></a>
+					</li>
+					<li>
+						<a href="120620-121920"><div class="ReportTitle">Report	120620-121920</div></a>
+					</li>
+					<li>
+						<a href="122020-010220"><div class="ReportTitle">Report	122020-010220</div></a>
+					</li>
+					<li>
+						<a href="010320-011620"><div class="ReportTitle">Report	010320-011620</div></a>
+					</li>
+				</ol>
+			</li>
+		</ul>
+		<h3>Employee A</h3>
+		<ul>
+			<li>
+				<strong>Historical Payroll</strong>
+				<div></div>
+				<iframe title="Earnings" aria-label="Range Plot" id="datawrapper-chart-qsdIa" src="https://datawrapper.dwcdn.net/qsdIa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 510px !important; border: none; background-color: white;" height="210"></iframe>
+					<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+					</script>
+				<p></p>
+				<ol>
+					<li>
+						<a href="120620-121920"><div class="ReportTitle">Report	120620-121920</div></a>
+					</li>
+					<li>
+						<a href="122020-010220"><div class="ReportTitle">Report	122020-010220</div></a>
+					</li>
+				</ol>
+			</li>
+		</ul>
+		<br>
+		
+		
+<div1>
+		<p>
+			Made by <a class="bot-nav" href="https://samruston.co.uk/">me</a> with ☕️ in <img  src="https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f1e8_1f1e6.png">
+		</p>
+			Go <a class="bot-nav" href="/">home</a>
+		</p>
+	</div1>
+<footer>
+	<br>
+</footer>
+</div>
+</body>
+</html>
