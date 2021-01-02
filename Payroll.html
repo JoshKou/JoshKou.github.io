@@ -1,130 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" id="joshkou" class>
 <head>
-	<title>Payroll</title>
+	<title>Homepage</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" sizes="32x32" href="https://covid-19.ontario.ca/themes/custom/ds_theme/favicon.ico">
-	<link rel="icon" type="image/png" sizes="16x16" href="https://covid-19.ontario.ca/themes/custom/ds_theme/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-	<link rel="stylesheet" type="text/css" href="Pay.css">
-	<link rel="stylesheet" type="text/css" href="ontario-theme.css">
+	<link rel="stylesheet" type="text/css" href="sol.css">
+
 </head>
-<body class="my">
-	<!-- start banner -->
-    <!-- end banner -->
-	<div class="container">
+<body>
+	<div class="container">	
+	<div id="testingform">
+		<form>
+			
+			<button value=""><a class="different" href="COVID">COVID</a></button>
+			<button value=""><a class="different" href="Payroll">Payroll</a></button>
+				
+			
+		</form>
+	</div>
 	<header>
-		<h1>Payroll</h1>
-	</header>
-		<script type="text/javascript">
-			var myDate = new Date(); 
-        var myDay = myDate.getDay(); 
-        
-        // Array of days. 
-        var weekday = ['Sunday', 'Monday', 'Tuesday', 
-            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
-        ]; 
-        var curday = function(sp){
-				today = new Date();
-				var dd = today.getDate();
-				var mm = today.getMonth()+1; //As January is 0.
-				var yyyy = today.getFullYear();
-
-				if(dd<10) dd='0'+dd;
-				if(mm<10) mm='0'+mm;
-				return (mm+sp+dd+sp+yyyy);
-				};
-
-        document.write("Updated " + weekday[myDay] + " " + curday('/') ); 
-        
-        // get hour value. 
-        // var hours = myDate.getHours(); 
-        // var ampm = hours >= 12 ? 'PM' : 'AM'; 
-        // hours = hours % 12; 
-        // hours = hours ? hours : 12; 
-        // var minutes = myDate.getMinutes(); 
-        // minutes = minutes < 10 ? '0' + minutes : minutes; 
-        // var myTime = hours + " " + ampm + " : " + minutes +  
-        //     " : " + myDate.getMilliseconds(); 
-		</script>
-		<h3>Employee J</h3>
-			<p></p>	
-		<ul>
-			<li>
-				<strong>Historical Payroll</strong>
-				<div></div>
-				<iframe title="Earnings" aria-label="Range Plot" id="datawrapper-chart-qsdIa" src="https://datawrapper.dwcdn.net/qsdIa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 510px !important; border: none; background-color: white;" height="210"></iframe>
-					<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-					</script>
-				<p></p>
-				<ol>
-					<li>
-						<a href="083020-091220"><div class="ReportTitle">Report	083020-091220</div></a>
-					</li>
-					<li>
-						<a href="091320-092620"><div class="ReportTitle">Report	091320-092620</div></a>
-					</li>
-					<li>
-						<a href="092720-101020"><div class="ReportTitle">Report	092720-101020</div></a>
-					</li>
-					<li>
-						<a href="101120-102420"><div class="ReportTitle">Report	101120-102420</div></a>
-					</li>
-					<li>
-						<a href="102520‐110720"><div class="ReportTitle">Report	102520‐110720</div></a>
-					</li>
-					<li>
-						<a href="110820-112120"><div class="ReportTitle">Report	110820‐112120</div></a>
-					</li>
-					<li>
-						<a href="112220-120520"><div class="ReportTitle">Report	112220-120520</div></a>
-					</li>
-					<li>
-						<a href="120620-121920"><div class="ReportTitle">Report	120620-121920</div></a>
-					</li>
-					<li>
-						<a href="122020-010220"><div class="ReportTitle">Report	122020-010220</div></a>
-					</li>
-					<li>
-						<a href="010320-011620"><div class="ReportTitle">Report	010320-011620</div></a>
-					</li>
-				</ol>
-			</li>
-		</ul>
-		<h3>Employee A</h3>
-		<ul>
-			<li>
-				<strong>Historical Payroll</strong>
-				<div></div>
-				<iframe title="Earnings" aria-label="Range Plot" id="datawrapper-chart-qsdIa" src="https://datawrapper.dwcdn.net/qsdIa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 510px !important; border: none; background-color: white;" height="210"></iframe>
-					<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-					</script>
-				<p></p>
-				<ol>
-					<li>
-						<a href="120620-121920"><div class="ReportTitle">Report	120620-121920</div></a>
-					</li>
-					<li>
-						<a href="122020-010220"><div class="ReportTitle">Report	122020-010220</div></a>
-					</li>
-				</ol>
-			</li>
-		</ul>
 		<br>
-		
-		
-<div1>
-		<p>
-			Made by <a class="bot-nav" href="https://samruston.co.uk/">me</a> with ☕️ in <img  src="https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f1e8_1f1e6.png">
-		</p>
-			Go <a class="bot-nav" href="/">home</a>
-		</p>
-	</div1>
-<footer>
+	</header>
+		<table>
+			<tr>
+				<td>
+					
+		<h3>Hi, my name is</h3>
+		<h1 id="profile-title">Josh Kou,</h1>
+		<h1 id="profile-title">a web developer.</h1>
+		<br>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		</table>
+		<img src="https://raw.githubusercontent.com/JoshKou/JoshKou.github.io/master/img/WIN_20180321_12_53_33_Pro.jpg" class="prof">
+		<br><br><br><br><br><br><br><br><br>
+	<!-- directory/sitemap -->
+	<h3>Navigation</h3>
+		<ul>
+			<li>
+				<img src="https://raw.githubusercontent.com/JoshKou/JoshKou.github.io/master/img/UO.png">
+				<ol>
+					<li><a href="Academic Requirements">My Academic Requirements</a></li>
+					<li><a href="Plan">Class Plan</a></li>
+				</ol>
+				
+			</li>
+			<li>
+				<strong>Fitness Resources</strong>
+				<br>
+				<img src="https://jeffnippard.com/wp-content/uploads/2020/09/JeffLogo_white_250X44.png" alt="Jeff Nippard Fitness" width="160">
+				<ol>
+					<li>
+						<table class="">
+							<tr>
+								<td>
+									<a href="http://JoshKou.github.io/Jeff-Nippards-Fundamentals-Hypertrophy-Program.pdf">
+										<img src="https://shop.jeffnippard.com/wp-content/uploads/2020/04/Jeff-Nippards-Fundamentals-Hypertrophy-Program.jpg" alt="Jeff Nippard Fitness" width="160" height="auto">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="https://www.joshkou.com/Forearm%20Hypertrophy%20Guide.pdf">
+										<img src="https://shop.jeffnippard.com/wp-content/uploads/2020/03/Jeff-Nippards-Forearm-Hypertrophy-Program.jpg" alt="Forearm Hypertrophy Program" width="160" height="auto">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="">
+										<img src="https://shop.jeffnippard.com/wp-content/uploads/2020/04/Push-Pull-Legs.jpg" alt="INTERMEDIATE-ADVANCED PUSH/PULL/LEGS HYPERTROPHY PROGRAM" width="160" height="auto">
+									</a>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</li>
+			<li><strong>Windows 10 Diagnostics & Solutions</strong>
+				<ol>
+					<li>
+						<a href="https://joshkou.github.io/solutions%20windows%20error">Fixing 0xc000000f</a>
+					</li>
+				</ol>
+			</li>
+		</ul>
 	<br>
-</footer>
-</div>
+	<div1>
+		<p>
+			Made by <a href="javascript:void(0);" onclick="window.scrollTo(0,0);">me</a> with ☕️ in <img  src="https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f1e8_1f1e6.png">
+	</div1>
+	<footer>
+		<br>
+	</footer>
+	</div>
+
 </body>
 </html>
