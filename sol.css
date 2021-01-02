@@ -42,9 +42,11 @@ a {
     text-decoration: none;
 }
 
+a.different, a.different:hover {
+    color: #000;
+}
 a:hover {
     text-decoration: underline;
-    color: #F5CF66;
     font-weight: bold;
 }
 
