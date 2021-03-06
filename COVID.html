@@ -48,11 +48,9 @@
 	<header>
 		<h1>COVID-19</h1>
 	</header>
-		<h3>COVID-19 Monitoring - Public Data Sources for <i>New Tecumseth, Ontario</i></h3>
-		<h5>Josh Kou
-		</h5>
+		<h3>Public Data Sources for <i>New Tecumseth, Ontario</i></h3>
 		<script type="text/javascript">
-			var myDate = new Date(); 
+		var myDate = new Date(); 
         var myDay = myDate.getDay(); 
         
         // Array of days. 
@@ -67,10 +65,10 @@
 
 				if(dd<10) dd='0'+dd;
 				if(mm<10) mm='0'+mm;
-				return (mm+sp+dd+sp+yyyy);
+				return (mm+sp+dd+sp+yyyy).bold();
 				};
 
-        document.write("Updated " + weekday[myDay] + " " + curday('/') ); 
+        document.write("Updated " + weekday[myDay].bold() + " " + curday('/') ); 
         
         // get hour value. 
         // var hours = myDate.getHours(); 
@@ -83,14 +81,13 @@
         //     " : " + myDate.getMilliseconds(); 
 		</script>
 		<h3>Intra-Provincial Level Data</h3>
-			<p></p>
 			<table>
 					<tr>
 						<td>
 							<div id="ontario">
 								
 							<a id="special" href="https://covid-19.ontario.ca/data#demo">
-								<img class="ontario-header" src="https://covid-19.ontario.ca/themes/custom/ds_theme/logo-ontario%402x.png">
+								<img class="ontario-header" src="https://www.ontario.ca/img/logo-ontario@2x.png">
 							COVID-19 case data: All Ontario
 							</a>
 							</div>
@@ -107,8 +104,7 @@
 						</td>
 					</tr>
 			</table>
-					<ul>
-					</ul>
+					
 		<h3>Intra-County Level Data</h3>
 		<ul>
 						<li>
@@ -137,7 +133,7 @@
 			</table>
 		<br>
 		<div class="frame">
-			<img src="https://www.simcoemuskokahealthstats.org/Common/Images/Base/hsLOGO.png">
+			<img id="healthstats" src="https://www.simcoemuskokahealthstats.org/Common/Images/Base/hsLOGO.png">
 			<img class="ontario-header" src="https://www.simcoemuskokahealthstats.org/Common/Images/Base/SMDHULogo.gif">
 			<h3>COVID-19 Case Summary Table</h3>
 			<iframe aria-label="chart" id="datawrapper-chart-oEk6V" src="https://datawrapper.dwcdn.net/oEk6V/2/" scrolling="no" style=" width: 0px; border: medium none; min-width: 100% !important;" width="540" height="405" frameborder="0"></iframe>
