@@ -1,0 +1,307 @@
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    margin: 0;
+    background : #f0f0f2;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 1em;
+
+}
+img {
+  max-width: 100%;
+}
+script  {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h1,h2,h3,h4 {
+	color: #000;
+}
+
+h5  {
+    color: #;
+}
+
+#profile-title {
+	font-weight: bold;
+	font-size: 42px;
+}
+
+#article-title {
+ font-weight: bold;
+ font-size: 30px
+}
+
+p, li, div {
+	color: #000;
+}
+
+a:link, a:visited {
+    color: #38488f;
+    text-decoration: underline, bold;
+
+}
+
+#special {
+    color: #fff;
+}
+
+#healthstats {
+   width: 60%; 
+}
+
+.ontario-header {
+    width: 110px;
+    min-width: 110px;
+}
+
+.public-header {
+    width: 10em;
+    min-width: 12em;
+}
+
+.sm-header {
+    width: 220px;
+    min-width: 100px;
+}
+
+.wp-image {
+    max-width: 100%;
+    height: auto;
+}
+
+img.prof {
+	max-width: 34%;
+	height: auto%;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+
+.entry-content p, .entry-content ul, .entry-content ol, .entry-content dl, .entry-content blockquote, .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content code, .entry-content pre, .entry-content table {
+    /* margin: 0 0 24px; */
+} 	
+
+body.site-boxed, .container {
+    margin: 0 auto;
+    max-width: 40em;
+}
+
+.container {
+    padding: 2em;
+    background: #fdfdff;
+    width: 39em;
+    border-radius: 0.5em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.05);
+    margin: 1em auto;
+    margin-bottom: 2em;
+
+}
+
+.frame  {
+    /*background: #fff;*/
+    /*background: #DFF3F3; looks real good!*/
+    background: #DFF3F3;
+    width: 600px;
+    padding: 10px;
+    border-radius: 1em;
+    padding-top: 1.5em;
+}
+
+.frame h3 {
+    color: #002A50;
+    font-size: 110%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+#ontario {
+    padding: 1em;
+    background: #000;
+    border-radius: 0.5em;
+    max-width: 7em;
+    margin: 1em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.05);
+}
+
+#ontario:hover {
+      background-color: #00478F;
+      color: white;
+      text-decoration-color: white;
+
+}
+#public {
+    padding: 1em;
+    background: #f0f0f2;
+    border-radius: 0.5em;
+    max-width: auto;
+    margin: 1em;
+    min-height: 4.5em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+}
+
+/*extras and banner*/
+
+.covid-main__block-one {
+  background: #FCAF17;
+  margin: 0em;
+    overflow:auto
+
+}
+.ontario-background--gold, .ontario-background--gold ontario-row {
+  background-color: #FCAF17;
+  margin: 0em;
+    overflow:auto
+
+}
+div {
+    display: block;
+}
+.ontario-row {
+  margin: 0 auto;
+  max-width: 72rem;
+  width: 100%;
+}
+.ontario-small-12 {
+width: 100%;
+}
+
+/*appended 1*/
+.covid-main__block-one ontario-background--gold {
+  line-height: 1.6;
+  background-color: #FFFFFF;
+  color: #1a1a1a;
+  margin: 0;
+  overflow:auto
+}
+
+.ontario-column + .ontario-column:last-child,
+.ontario-columns + .ontario-column:last-child, .ontario-column +
+.ontario-columns:last-child,
+.ontario-columns +
+.ontario-columns:last-child {
+  float: right;
+  overflow:auto
+}
+.ontario-medium-3 {
+    width: 25%;
+  }
+
+/*end appended 1*/
+.ontario-row.ontario-row--collapse > .ontario-column,
+.ontario-row.ontario-row--collapse > .ontario-columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ontario-padding-bottom-16-\! {
+  padding-bottom: 1rem;
+
+}
+.ontario-medium-8 {
+    width: 66.66667%;
+  }
+.ontario-column, .ontario-columns {
+    position: relative;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+    box-sizing: border-box;
+ /*causes no color*/
+    float: left;
+    line-height: 1.6;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    overflow:auto;
+}
+
+.ontario-row.ontario-row--collapse .ontario-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ontario-row .ontario-row {
+  margin: 0 calc(-2rem/2);
+  max-width: none;
+  width: auto;
+}
+
+.ontario-row .ontario-row:before, .ontario-row .ontario-row:after {
+  content: " ";
+  display: table;
+}
+
+.ontario-row .ontario-row:after {
+  clear: both;
+}
+
+.ontario-button--black-bg,
+.ontario-button--black-bg:visited {
+  background-color: black;
+  color: white;
+}
+.ontario-button {
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: none;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: calc(14/9);
+  margin: 0 calc(1rem + 0.75rem) 1.5rem 0;
+  min-width: 10rem;
+  padding: calc((1rem + 0.25rem) / 2) 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ontario-button--black-bg:hover,
+.ontario-button--black-bg:focus {
+  background-color: #00478F;
+  color: white;
+}
+.ontario-h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.0313rem;
+    line-height: 1.5;
+    font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+}
+@media screen and (max-width: 40em) {
+  .ontario-hide-for-small-only {
+    display: none;
+  }
+}
+.ontario-show-for-sr,
+.ontario-show-on-focus {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/*end banner*/ 

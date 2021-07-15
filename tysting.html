@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" id="joshkou" class="">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href=".favicon.ico" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="stylesheet" type="text/css" href=".css">
+	<link rel="import" href="https://samruston.co.uk">
+</head>
+<body>
+
+	<div class="container">
+		<script type="text/javascript">
+			var link = document.querySelector('link[rel="import"]');
+
+			// Grab DOM from warnings.html's document.
+		   var template = link.import.querySelector('.subtitle');
+    	   var clone = document.importNode(template.content, true);
+
+    		document.querySelector('#container').appendChild(clone);
+
+		</script>
+	<div class="closer">
+		<p>
+
+			Made by <a href="https://samruston.co.uk/">me</a> with ☕️ in <img  src="https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f1e8_1f1e6.png">
+		</p>
+			Go <a href="/">home</a>
+		</p>
+	</div>
+	</div>
+</body>
+</html>
