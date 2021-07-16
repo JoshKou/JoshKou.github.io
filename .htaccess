@@ -7,7 +7,6 @@ RewriteEngine on
 !
 
 RewriteCond %{REQUEST_FULENAME} !-d 
-RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
 
 # Check for file in directoru with .html extension
 
@@ -25,7 +24,6 @@ RewriteEngine on
 !
 
 RewriteCond %{REQUEST_FULENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
 
 # Check for file in directoru with .html extension
 
