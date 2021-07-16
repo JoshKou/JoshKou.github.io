@@ -1,0 +1,948 @@
+/* CSS Document */
+/* Time Card CalculatorSoup */
+/* TimeCardCalculator.net */
+/*
+Colors
+Blue original #2B54BA
+Blue #365EBF title and menu and time card title background and ...
+Blue #7C98DA menu selected
+Blue #E6F0FF time card background and report rows
+Blue #0000EE links
+Red #CF3F26 links hover
+Red #990000 title soup
+Green #2DA458 page <h1> titles
+*/
+
+body {
+	background-color: #f0f0f0;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: Helvetica, sans-serif;
+}
+input.TimeCardInput {
+	width: 3em;
+}
+a {
+	color: #0000EE;
+}
+a:hover {
+	color: #CF3F26;
+}
+abbr {
+	text-decoration: none;
+}
+/* General Table Settings */
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 0;
+}
+/* All Table Cells */
+td {
+	vertical-align: top;
+	padding: 0;
+}
+/* notes */
+a.note {
+	font-weight: normal;
+	font-size: 0.8em;
+	font-style: italic;
+}
+.notes {
+	font-weight: normal;
+	font-size: 0.8em;
+	font-style: italic;
+	color: #666;
+}
+.error {
+	color: red;
+	text-align: center;
+}
+ul.bookmarks li {
+	margin: 5px 0px 12px 0px;
+}
+ul.bookmarks li ul li {
+	margin: 12px 0px 12px 0px;
+}
+ol.directions li, ul.directions li {
+	margin: 6px 0px 6px 0px;
+}
+ol.directions li ul li, ul.directions li ul li {
+	margin: 12px 0px 6px 0px;
+}
+.p2px {
+	padding: 2px;
+}
+.p4px {
+	padding: 4px;
+}
+.p4pxB {
+	padding-bottom: 4px;
+}
+.m10L {
+	margin-left: 10px;
+}
+.f09 {
+	font-size: 0.9em !important;
+}
+.FL {
+	float: left;
+}
+.greytext {
+	background-color: #FFFFFF;
+	color: #777777;
+}
+sup {
+	vertical-align: top;
+	font-size: 0.6em;
+}
+/*
+
+TABLES
+
+*/
+/*
+core table styles
+*/
+div.table {
+	display:table;
+	border-collapse:collapse;
+}
+div.caption {
+	display:table-caption;
+}
+div.row {
+	display:table-row;
+}
+div.cell {
+	display:table-cell;
+}
+
+
+/* <header></header> elements */
+.skip a {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+.skip a:focus {
+	position: static;
+	width: auto;
+	height: auto;
+}
+div#siteTitle {
+	background: #FFFFFF url(../images/icons/clock_icon_desktop.png);
+	background-repeat: no-repeat;
+	padding: 20px 0px 10px 0px;
+}
+p#siteName {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0;
+	margin: 0px 0px 2px 50px;
+	background-color: #FFF;
+	color: #365EBF;			/* blue */
+}
+p#siteName a, p#siteName a:hover {
+	text-decoration: none;
+	background-color: #FFF;
+	color: #365EBF;			/* blue */
+}
+span.extraSoup {
+	color: #990000;
+	background-color: #FFF;
+	margin-left: -8px;
+	font-weight: bold;
+	display: none;
+}
+p#tagline {
+	background-color: #FFF;
+	color: #333;
+	padding: 0;
+	margin: 2px 0px 10px 60px;
+}
+#search {
+	float: right;
+	margin: 0px 10px 5px 5px;
+	font-size: 0.95em;
+	max-width: 300px;
+}
+/* top navigation */
+/* See alternative http://www.dynamicdrive.com/style/csslibrary/item/solid_block_menu/ */
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+.desktopMenu {
+	font-size: 0.95em;
+	width: 100%; /*leave this value as is in most cases*/
+	overflow: hidden;
+	font-weight: bold;
+}
+.desktopMenu ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%; /*width of menu*/
+	border: 1px solid #039; /*dark purple border*/
+	background: #365EBF /* url(../images/nav/bg_out.jpg) center center repeat-x */;
+}
+.desktopMenu ul li {
+	display: inline;
+}
+.desktopMenu ul li a {
+	float: left;
+	color: white; /*text color*/
+	padding: 5px 11px;
+	text-decoration: underline;
+	border-right: 1px solid #039; /*dark purple divider between menu items*/
+}
+.desktopMenu ul li a:visited {
+	color: white;
+}
+.desktopMenu ul li a:hover, .desktopMenu ul li a.current {
+	color: white !important; /*text color of selected and active item*/
+	padding-top: 6px; /*shift text down 1px for selected and active item*/
+	padding-bottom: 4px; /*shift text down 1px for selected and active item*/
+	background-color: #7C98DA;/* background: black url(../images/nav/bg_in.jpg) center center repeat-x; */
+}
+
+/* page titles <h1> */
+h1 {
+	font-size: 1.75em;
+	font-weight: normal;
+	color: #2DA458;
+	background-color: #FFF;
+	margin-top: 0;
+}
+/* Page Content Titles */
+h1#pageTitle {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 10px 5px 5px 5px;
+	color: #2DA458;			/* green */
+	background-color: #FFF;
+}
+div#SubH1Nav {
+	margin: 5px 5px 5px 20px;
+}
+/* Page Content Titles */
+h2 {
+	font-size: 1.25em;
+	color: #2DA458;
+	background-color: #FFF;
+}
+
+/* main content */
+/* content */
+div#contentMain {
+	clear: both;
+	padding: 0px 15px 10px 15px;
+}
+.ClearBoth {
+	clear: both;
+	height: 0px;
+}
+#shareThisDiv2 {
+	margin: 5px 0px 10px 15px;
+}
+/* ads div */
+div#topOther {
+	clear: left;
+	padding: 0px 0px 4px 0px;
+}
+/* main content wrappers */
+/* todo trash XXX */
+/*
+#shadowXXX {
+	width:840px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(../images/global/shadow_box_drop_840a.jpg);
+	background-repeat: repeat-y;
+}
+*/
+div#wrapperWhite {
+	background-color: #FFFFFF;
+	border: 1px solid #666;
+	margin: 2px auto;
+	max-width: 1024px;
+}
+.borderLight {
+	border: 1px solid #b9b9b9;
+}
+.borderMedium {
+	background-color: #f0f0f0;
+	border: 1px solid #b3b3b3;
+}
+#ContentWrapper {
+	padding: 15px 0px 10px 0px;
+}
+#ContentWrapperLeft {
+	float: left;
+	margin: 0px 0px 0px 15px;
+	padding: 4px 6px 4px 6px;
+	border-radius: 4px;
+
+}
+table#calculatorWrap {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+#ContentWrapperRight {
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	overflow: hidden;
+}
+#ContentWrapperAds {
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 2px 2px 20px;
+	overflow: hidden;
+}
+
+/* input elements - time card and pay rate */
+div.timecardTableWrapper {
+	background-color:#e6f0ff;
+	border:1px solid #999;
+	padding:2px;
+	margin-bottom:6px;
+	border-radius: 4px;
+}
+div.timecardTablecontentMain {
+	background-color: #e6f0ff;
+	border: 1px solid #999;
+	border-radius: 4px;
+	padding: 2px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+table.TimecardEntryTable {
+	background-color: #E6F0FF;
+	width: 100%;
+}
+table.TimecardEntryTable td {
+	padding: 2px;
+}
+table.bordered {
+	border-collapse: collapse;
+}
+table.bordered td {
+	border: 1px solid #999;
+}
+/*
+div.payRateTableWrapper {
+	background-color:#e6f0ff;
+	border:1px solid #999;
+	padding:2px;
+	margin-top:6px;
+	border-radius: 4px;
+}
+*/
+
+table.PayRateTable td {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+}
+/* report elements */
+div.timecardReportsWrapper {
+	background-color: #FFFFFF;
+	border: 1px solid #999;
+	padding: 2px;
+	border-radius: 4px;
+}
+div.ReportTitle {
+	font-weight: bold;
+	color: #FFF;
+	background-color: #626262;
+	margin-bottom: 2px;
+	padding: 2px 4px 2px 4px;
+	border-radius: 4px;
+}
+div.WeekTitle {
+	font-weight: bold;
+	color: #FFF;
+	/* background-color:#2B54BA; */
+	background-color: #365EBF;
+	margin-bottom: 2px;
+	padding: 4px 4px 4px 8px;
+	border-radius: 4px;
+}
+table.DailyReport {
+	width: 100%;
+}
+table.WeeklyTotals {
+	width: 100%;
+}
+table.DailyReport td {
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+div.WeeklyTotalsTitle {
+	font-weight: bold;
+	color: #333;
+	background-color: #FFF;
+	margin-bottom: 2px;
+	padding: 4px 2px 0px 4px;
+}
+table.WeeklyTotals td {
+	padding: 3px;
+}
+tr.blueRow {
+	background-color: #E6F0FF;
+}
+tr.yellowRow {
+	background-color: #FFFFCC;
+}
+table.Multi {
+	width: 98%;
+}
+table.Multi td {
+	padding: 8px 4px 8px 4px;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #333;
+}
+/* forms */
+form {
+	margin: 0;
+	padding: 0;
+}
+fieldset {
+	margin: 12px 0px 8px 0px;
+	border-radius: 4px;
+}
+form#reset {
+	text-align: left;
+}
+input.submitButton {
+	margin: 10px;
+}
+/* page footers */
+div#footer {
+	margin: 6px 0px 50px 0px;
+	color: #999;
+	font-size: 0.9em;
+	text-align: center;
+}
+.footerLinksWrapper {
+	display: none;
+}
+.bold {
+	font-weight: bold;
+}
+.selectBackground {
+	background-color: #F7F7F7;
+	border: 1px solid #b3b3b3;
+	padding: 4px;
+	float: left;
+	border-radius: 4px;
+}
+.selectWrap {
+	border: 5px solid #F7F7F7;
+}
+.selectWrapIndent {
+	border: 5px solid #F7F7F7;
+	padding-left: 20px;
+}
+.selectWrapBlue {
+	border-bottom: 4px solid #E6F0FF;
+	border-top: 4px solid #E6F0FF;
+}
+.width50 {
+	width: 50%;
+}
+.width75 {
+	width: 75%;
+}
+.width85 {
+	width: 85%;
+}
+.breakDays {
+	text-align: center;
+	padding: 2px 4px 2px 4px;
+}
+.cellLeft {
+	text-align: left;
+}
+.cellRight {
+	text-align: right;
+}
+.cellCenter {
+	text-align: center;
+}
+.overflowHidden {
+	overflow: hidden;
+}
+.footer {
+	background: #365EBF /* url(../images/nav/bg_out.jpg) center center repeat-x */;
+	color: #FFF;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+.footer a {
+	color: #FFF;
+}
+/* southborough website design link styles */
+footer {
+	color: #666666;
+	font-size: 0.9em;
+	text-align: center;
+	padding: 15px;
+}
+footer a {
+	color: #666;
+}
+footer a:hover {
+	color: #993333;
+}
+/* CalculatorSoup */
+#titleCS {
+	margin: 0px 2px 0px 2px;
+}
+#titleCS a {
+	text-decoration: none;
+}
+#titleCS span.topCalculator {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.75em;
+	color: #000;
+	background-color: #FFF;
+	font-weight: bold;
+}
+#titleCS span.topSoup {
+	color: #900;
+	background-color: #FFF;
+	margin-left: -4px;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+/*
+
+CSS DIV TABLES
+
+*/
+/*
+core table styles
+*/
+/* not in use delete ?????
+div.table {
+	display:table;
+	border-collapse:collapse;
+}
+div.caption {
+	display:table-caption;
+}
+div.row {
+	display:table-row;
+}
+div.cell {
+	display:table-cell;
+}
+*/
+
+/* calculator print options table
+centers table
+right justifies labels to inputs
+<table cellspacing="0" cellpadding="6" border="0" width="100%">
+*/
+
+
+div.tablePrintOptions {
+	margin:1em auto 1em auto;
+	width: 100%;
+}
+div.tablePrintOptions div.cell {
+	padding:2px;
+}
+div.tablePrintOptions div.headerCell {
+	text-align:center;
+	font-weight:bold;
+}
+input.PrintInput {
+	width: 90%;
+}
+
+
+
+
+
+
+
+
+
+/*
+divs that contain an image and text
+*/
+div.ImageTextWrap {
+	clear:both;
+	overflow:hidden;
+	border-bottom:2px solid #2DA458;
+	padding-top:2px;
+	padding-bottom:2px;
+	width:98%;
+	margin:auto;
+}
+/*
+with image on the left and text on the right
+for multiple users PAGE
+*/
+div.TextLeft {
+	overflow:hidden;
+	vertical-align:top;
+	padding:6px;
+}
+div.ImageRight {
+	float:right;
+	vertical-align:top;
+	padding:6px;
+}
+div.ImageBottom {
+	display: none;
+}
+/* below 760 */
+@media screen and (max-width: 759px) {
+	div.TextLeft {
+		overflow:auto;
+		padding: 1px;
+	}
+	div.ImageTextWrap {
+		overflow:auto;
+		margin:0;
+	}
+	div.ImageBottom {
+		display: block;
+		text-align:center;
+		padding:0;
+	}
+	div.ImageRight {
+		display: none;
+	}
+	figure {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+/* below 760 */
+@media screen and (max-width: 759px) {
+	.figDesktop {
+		display: none;
+	}
+}
+/* above 760 */
+@media screen and (min-width: 760px) {
+	.figMobile {
+		display: none;
+	}
+}
+
+
+/* Mobile and Mobile Menu Controls */
+/* above 760 */
+@media screen and (min-width: 760px) {
+	div.mobileMenu {
+		display: none;
+	}
+	#ContentWrapperRight p:first-of-type {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	.MaxWidth759 {
+		display: none;
+	}
+}
+
+/* below 480 */
+	.MaxWidth480 {
+		display: none;
+	}
+@media screen and (max-width: 480px) {
+	/* items to hide below 480 */
+	.MaxWidth480 {
+		display: none;
+	}
+}
+
+/* below 480 */
+.MinWidth480 {
+	display: none;
+}
+@media screen and (min-width: 480px) {
+	/* items to hide below 480 */
+	.MinWidth480 {
+		display: inline;
+	}
+}
+
+/* below 760 */
+@media screen and (max-width: 759px) {
+	.desktopMenu ul li.priority_4 {
+		display: none;
+	}
+}
+/* below 600 */
+@media screen and (max-width: 599px) {
+	.desktopMenu ul li.priority_3 {
+		display: none;
+	}
+}
+/* below 360 */
+@media screen and (max-width: 359px) {
+	.desktopMenu ul li.priority_2 {
+		display: none;
+	}
+}
+
+/* below 760 */
+@media screen and (max-width: 759px) {
+	body {
+		background-color: #ffffff;
+	}
+	div#wrapperWhite {
+		border-width: 0px;
+		border-bottom: 1px solid #666;
+	}
+	div#contentMain {
+		padding: 0px 10px 5px 10px;
+	}
+	#ContentWrapperLeft {
+		float: none;
+		margin: auto;
+		padding: 4px 6px 4px 6px;
+		border-radius: 4px;
+	}
+	table#calculatorWrap {
+		float: none;
+		margin: auto;		
+	}
+
+	/*#search, .footer, .MaxWidth700 {*/
+	.footer, .MaxWidth700 {
+		display: none;
+	}
+
+	/* footer stpl */
+	.footerLinksWrapper {
+		display: block;
+		padding: 5px;
+		background-color: #626262;
+	}
+	.footerLinksDiv {
+		padding: 8px 4px 8px 4px;
+		border-bottom: 1px solid #7D7D7D;
+	}
+	a.footerLinks,
+	a.footerLinks:hover,
+	a.footerLinks:active {
+		color: #ccc;
+		text-decoration: none;
+	}
+	.footerLinksText {
+		padding-left: 10px;
+		font-size: 0.9em !important;
+	}
+
+	div#siteTitle {
+		background: #FFFFFF url(../images/icons/clock_icon_desktop_sm.png);
+		background-repeat: no-repeat;
+		padding: 12px 0px 5px 0px;
+		border-bottom: 0px solid #666666;
+	}
+	p#siteName {
+		font-size: 1.35em;
+		margin: 0px 0px 2px 36px;
+	}
+	span.extraSoup {
+		margin-left: -6px;
+		display: none;
+	}
+	p#tagline {
+		font-size: 0.9em;
+		margin: 2px 0px 5px 45px;
+	}
+	h1#pageTitle {
+		font-size: 1.25em;
+		margin: 8px 5px 5px 5px;
+	}
+
+	div.mobileMenu {
+		display: block;
+		z-index: 9990;
+	}
+	div.mobileMenu ul.mobileList {
+		display: block;
+		background: #eee;
+		opacity: 0.9;
+	}
+	div.mobileMenu ul.mobileList li {
+		display: block;
+		margin: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	div.mobileMenu ul.mobileList li ul {
+		display: block;
+		position: relative;
+		margin: 0px;
+	}
+	div.mobileMenu ul.mobileList li ul li {
+		display: block;
+		margin: 0px;
+		background: #eee;
+		opacity: 0.9;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 15px;
+		font-weight: normal;
+	}
+	div.mobileMenu ul.mobileList li a {
+		cursor: pointer;
+		display: block;
+		outline: none;
+		width: 75%;
+	}
+	/* position the checkbox off screen and display none */
+	input[type=checkbox][id=toggle] {
+		display: none;
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	/* initialize the mobile menu hidden */
+	div.mobileMenu ul.mobileList {
+		display: none;
+	}
+	/* show or hide the menu when checked or unchecked */
+	[type="checkbox"][id=toggle]:checked ~ ul.mobileList {
+		display: block;
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		margin: 0px;
+		padding: 0px;
+		width: 85%;
+		border: 2px solid #365EBF;
+		;
+	}
+	 [type="checkbox"][id=toggle]:unchecked ~ ul.mobileList {
+	 display: none;
+	}
+	/*  manipulate the labels for show and hide
+			#showMenu is the hamburger label to show menu when clicked
+			#hideMenu is the X label to hide the menu when clicked
+		 */
+	div.mobileMenu label {
+		display: block;
+		z-index: 9995;
+		color: #999999;
+		width: 35px;
+		height: 45px;
+		cursor: pointer;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		margin: 6px;
+	}
+	#showMenu {
+		display: block;
+		font-size: 2.0em;
+	}
+	#hideMenu {
+		display: none;
+		font-size: 2.5em;
+	}
+	#toggle:checked ~ #hideMenu {
+		display: block;
+	}
+	#toggle:checked ~ #showMenu {
+		display: none;
+	}
+}
+
+/* below 360 */
+@media screen and (max-width: 359px) {
+	/* squeeze in a little more width */
+	div#contentMain {
+		padding: 2px;
+	}
+	#ContentWrapperLeft {
+		padding: 2px;
+	}
+}
+
+
+
+
+
+
+
+/*
+	Calculate and Reset Buttons Begin
+	Taken and modified from http://purecss.io/ 
+*/
+.btn {
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.btn::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+.btn {
+    font-family: inherit;
+    font-size: 90%;
+    padding: 0.5em 1em;
+    color: #000;
+    border: 1px solid #999;  /*IE 6/7/8*/
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+	color: #333333;
+	background-color: #cccccc;
+}
+/*
+.btn:focus {
+    outline: 0;
+}
+*/
+input.btn[disabled] {
+	color:#999;
+}
+.btn-bot-margin {
+	margin-bottom: 5px;
+}
+.btn-top-margin {
+	margin-top: 5px;
+}
+/*
+	Calculate and Form Buttons End
+*/
