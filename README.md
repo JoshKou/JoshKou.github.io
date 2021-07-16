@@ -1,7 +1,9 @@
 # JoshKou.github.io
-My portfolio webiste
+My portfolio website
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/JoshKou/JoshKou.github.io/master/apple-touch-icon.png" width="100" />
+    <a href="/" target="_blank">
+      <img alt="Logo" src="images/screen.png" width="100" />
+    </a>
 </div>
 <h1 align="center">
   joshkou.com
