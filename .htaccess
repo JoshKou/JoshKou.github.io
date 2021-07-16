@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # mod_rewrite starts here
 
 RewriteEngine on
@@ -15,7 +15,7 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 # Here we actually show the page that has the .html extension
 
 RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
-=======
+
 # mod_rewrite starts here
 
 RewriteEngine on
@@ -31,7 +31,5 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # Here we actually show the page that has the .html extension
 
-
 RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
 
->>>>>>> 8f44785a845441974b8d9a214f3a8214c2631218
