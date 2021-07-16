@@ -1,9 +1,7 @@
 # JoshKou.github.io
-My portfolio website
+My portfolio webiste
 <div align="center">
-    <a href="/" target="_blank">
-      <img alt="Logo" src="images/screen.png" width="100" />
-    </a>
+  <img alt="Logo" src="https://raw.githubusercontent.com/JoshKou/JoshKou.github.io/master/apple-touch-icon.png" width="100" />
 </div>
 <h1 align="center">
   joshkou.com
@@ -23,7 +21,7 @@ My portfolio website
   </a>
 </p>
 
-![demo](https://github.com/JoshKou/JoshKou.github.io/blob/master/apple-touch-icon.png?raw=true)
+![demo](https://github.com/JoshKou/JoshKou.github.io/blob/master/images/screen.png?raw=true)
 
 ## 🚨 Forking this repo
 
